@@ -41,22 +41,84 @@ body{
 
 .apresentacao__links{
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
+    justify-content: flex-start;
+    margin-top: 16px;
 }
 
 .apresentacao__links__link{
-    background-color: #22D4FD;
-    width: 280px;
-    text-align: center;
-    border-radius: 16px;
-    font-size: 24px;
+   display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #22D4FD 60%, #0A8FC1 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 14px 32px;
+    font-size: 22px;
     font-weight: 600;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: #000000;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(34, 212, 253, 0.15);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.apresentacao__links__link i {
+    font-size: 26px;
+}
+
+.apresentacao__links__link.linkedin:hover {
+    background: linear-gradient(90deg, #0077b5 60%, #22D4FD 100%);
+    color: #fff;
+}
+
+.apresentacao__links__link.github:hover {
+    background: linear-gradient(90deg, #333 60%, #22D4FD 100%);
+    color: #fff;
+}
+
+.apresentacao__links__link:hover {
+    transform: translateY(-2px) scale(1.05);
 }
 
 .foto-arredondada {
-  border-radius: 20px; /* ajuste o valor conforme desejar */
+    border-radius: 30px;
+    display: block;
+    width: 320px; /* ajuste conforme seu layout */
+    height: auto;
+    /* Efeito de borda suave e transparente */
+    -webkit-mask-image: radial-gradient(circle, #000 80%, transparent 100%);
+    mask-image: radial-gradient(circle, #000 80%, transparent 100%);
+    background: #000; /* garante transição suave com fundo preto */
+}
+
+/* ...existing code... */
+
+.idioma-switch {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.idioma-switch button {
+    background: linear-gradient(90deg, #22D4FD 60%, #0A8FC1 100%);
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 22px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(34, 212, 253, 0.15);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.idioma-switch button:hover {
+    background: linear-gradient(90deg, #0A8FC1 60%, #22D4FD 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.05);
 }

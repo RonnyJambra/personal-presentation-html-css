@@ -7,26 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- ...existing code... -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+<script src="script.js"></script>
 
 <body>
     <header></header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio a um alto nível <strong 
-            class="titulo-destaque">com um Engenheiro de Qualidade!
-            </strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Ronaldo Pereira, Engenheiro de Qualidade,
-            com foco em JavaScript, Cypress, HTML e CSS. 
-            Vamos conversar?</p>
-            <div class="apresentacao__links">
-                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/qualidade-sqe-lean-eqf-fmea-vda-auditor-iso/">LinkedIn</a>
-                <a class="apresentacao__links__link" href="https://github.com/RonnyJambra">GitHub</a>
-            </div>
-        </section>
-        <img class="foto-arredondada" src="palestra_Ronaldo.png" alt="palestra_Ronaldo">
-    </main>
-    <footer></footer>
+    <!-- ...existing code... -->
+<main class="apresentacao">
+    <div class="idioma-switch">
+        <button onclick="mostrarPortugues()">Português</button>
+        <button onclick="mostrarIngles()">English</button>
+    </div>
+    <!-- Português -->
+    <section class="apresentacao__conteudo apresentacao-pt">
+        <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio a um alto nível <strong class="titulo-destaque">com um Engenheiro de Qualidade!</strong></h1>
+        <p class="apresentacao__conteudo__texto">Olá! Sou Ronaldo Pereira, Engenheiro de Qualidade, com foco em JavaScript, Cypress, HTML e CSS. Vamos conversar?</p>
+       <div class="apresentacao__links">
+    <a class="apresentacao__links__link linkedin" href="https://www.linkedin.com/in/qualidade-sqe-lean-eqf-fmea-vda-auditor-iso/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="apresentacao__links__link github" href="https://github.com/RonnyJambra" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+</div>
+    </section>
+    <!-- Inglês -->
+    <section class="apresentacao__conteudo apresentacao-en" style="display:none;">
+        <h1 class="apresentacao__conteudo__titulo">Take your business to the next level <strong class="titulo-destaque">with a Quality Engineer!</strong></h1>
+        <p class="apresentacao__conteudo__texto">Hi! I'm Ronaldo Pereira, Quality Engineer, focused on JavaScript, Cypress, HTML, and CSS. Shall we talk?</p>
+        <div class="apresentacao__links">
+    <a class="apresentacao__links__link linkedin" href="https://www.linkedin.com/in/qualidade-sqe-lean-eqf-fmea-vda-auditor-iso/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="apresentacao__links__link github" href="https://github.com/RonnyJambra" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+</div>
+    </section>
+    <img class="foto-arredondada" src="palestra_Ronaldo.png" alt="palestra_Ronaldo">
+</main>
+<!-- ...existing code... -->
+
+<footer></footer>
 </body>
 
 </html>
